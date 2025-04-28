@@ -233,7 +233,11 @@ ul {
     padding: 5px;
     gap: 15px;
     padding-top: 25px;
-
+}
+.users.card {
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    
 }
 .words {
     align-content: top;
@@ -248,4 +252,34 @@ div.users.card {
     background-color: none;
     border: none;
     box-shadow: none;
+}
+
+.user {
+    display: flex;
+    height: 3em;
+    justify-content: left;
+    align-items: center;
+}
+.user img {
+    flex: 0;
+    max-height: 3em;
+}
+.user div {
+    flex: 1;
+    max-height: 3em;
+}
+.username {
+    font-weight: 700;
+}
+div .items.card {
+    grid-template-rows: 1fr;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.announcement {
+    padding-top: 8px;
+}
+.items.card div + div {
+    border-top: 2px solid #e0e5ea;
 }
